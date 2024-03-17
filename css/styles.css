@@ -156,6 +156,7 @@ color: #404BBF;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+ 
  }
 
 
@@ -310,25 +311,27 @@ color: #404BBF;
 }
 
 .team-icon {
-    padding-top: 8px;
-    padding-bottom: 32px;
-    max-width: 232px;
-}
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    }
 
-
-.icon {
+.team-link {
     width: 40px;
     height: 40px;
     background-color: #4d5ae5;
     border-radius: 50%;
-    width: calc((100% - 3 * 24px) / 4);
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
+    display: flex;
+}
+
+.icon {
 }
 
 .team-contact-link {
     fill: #F4F4FD;
- 
 }
 
 /** =================================== */
@@ -432,26 +435,46 @@ color: #404BBF;
     max-width: 264px;  
 }
 
-footer-icon {
-    padding-top: 100px;
-    padding-bottom: 132px;
-    max-width: 208px;
+
+
+.footer-icon {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 692px 132px 120px;
+   
+   
+}
+
+.footer-text-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
 
 }
 
 .icon-link {
+    width: calc((100% - 16px * 3) / 4);
     width: 40px;
     height: 40px;
     background-color: #4d5ae5;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-    width: calc((100% - 3 * 16px) / 4);
+    display: flex;
+    margin-bottom: 132px;
 }
 
 .footer-contact-link {
     fill: #F4F4FD;
+    transition-property: background-color;
+    transition-duration: 250ms;
+                  cubic-bezier(0.4, 0, 0.2, 1)
+    
 }
 
 .icon-link:hover,
