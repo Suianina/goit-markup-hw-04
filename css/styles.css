@@ -368,9 +368,25 @@ color: #404BBF;
  .portfolio-item {
     width: calc((100% - 24px * 2) / 3);
     background: #fff;
+    position: relative;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+ }
+
+ .portfolio-item:hover .portfolio-cover-text,
+ .portfolio-item:focus .portfolio-cover-text {
+    transform: translateY(100%);
  }
 
  .portfolio-image {}
+
+ .portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
+ }
 
  .portfolio-data {
     border-bottom: 1px solid #e7e9fc;
@@ -389,6 +405,11 @@ color: #404BBF;
     margin-bottom: 8px;
 }
 
+
+
+
+
+
  .portfolio-item-text {
     font-size: 16px;
     line-height: 1.5;
@@ -396,6 +417,22 @@ color: #404BBF;
     color: #434455;
     }
  
+.portfolio-cover-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 250ms;
+    
+}
   
  /** =================================== */
 
@@ -408,7 +445,18 @@ color: #404BBF;
     background: #2e2f42;
 }
 
-.container {}
+.footer-container {
+    display: flex;
+}
+
+.footer-data {
+margin-right: 100px;
+margin-left: 156px;
+
+}
+
+  
+  
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -435,14 +483,8 @@ color: #404BBF;
     max-width: 264px;  
 }
 
-.footer-media-icon {
-    padding-top: 100px;
-    padding-bottom: 132px;
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-}
+.footer-media-icon {}
+
 
 .footer-text-media {
     font-weight: 500;
@@ -451,6 +493,14 @@ color: #404BBF;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+
+}
+
+.footer-icon {
+    display: flex;
+    gap: 16px;
+
+
 
 }
 
@@ -463,6 +513,7 @@ color: #404BBF;
     justify-content: center;
     align-items: center;
     display: flex;
+    
    
 }
 
