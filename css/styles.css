@@ -160,13 +160,16 @@ color: #404BBF;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
+    background-size: cover;
+   
  }
 
 
 .container {
     max-width: 1440px;
-    background-position: center;
-    background-size: cover;
+  
+    
 }
 
 .hero-title {
@@ -232,7 +235,23 @@ color: #404BBF;
     width: calc((100% - 3 * 24px) / 4);
     }
 
-.features-item-icon {}
+.features-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    margin-bottom: 8px;
+}
+
+
+.features-item-icon {
+    width: 64px;
+    height: 64px;
+}
 
  .features-subtitle {
     font-weight: 500px;
@@ -283,8 +302,7 @@ color: #404BBF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     align-items: center;
-    width: 100%;
-    height: 100%;
+  
  }
     
  
@@ -322,6 +340,8 @@ color: #404BBF;
     gap: 24px;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     }
 
 .team-link {
@@ -332,18 +352,19 @@ color: #404BBF;
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {}
 
 .team-contact-link {
     fill: #F4F4FD;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .team-link:hover,
 .team-link:focus {
-    background-color: #31d0aa;  
+    background-color: #404bbf
 }
 
 /** =================================== */
@@ -515,13 +536,14 @@ margin-left: 156px;
     justify-content: center;
     align-items: center;
     display: flex;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact-link {
     fill: #F4F4FD;
     transition-property: background-color;
     transition-duration: 250ms;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .icon-link:hover,
