@@ -57,8 +57,7 @@ address {
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
-    
+    background: #fff; 
 }
 
 .container-header {
@@ -101,14 +100,12 @@ address {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus {
     color: #404BBF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
 }
 
 .current {
@@ -144,13 +141,14 @@ color: #404BBF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-   
-}
-.address-link:hover,
-.address-link:focus {
-    color:#404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.address-link:hover,
+.address-link:focus {
+    color:#404BBF; 
+}
+
 /** ================================== */
 
 
@@ -162,8 +160,6 @@ color: #404BBF;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-   
- 
  }
 
 
@@ -184,7 +180,6 @@ color: #404BBF;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    
 }
 
 .hero-buy-btn {
@@ -199,17 +194,16 @@ color: #404BBF;
     display: flex;
     margin: 0 auto;
     align-items: center;
-
     display: block;
     min-width: 169px;
     height: 56px;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .hero-buy-btn:hover,
 .hero-buy-btn:focus {
-    background: #404bbf;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #404bbf; 
 }
 
 .hero-buy-btn-button {
@@ -226,8 +220,7 @@ color: #404BBF;
     padding-bottom: 120px;
  }
 
-.container {
-}
+.container {}
 
 .features-list {
     display: flex;
@@ -239,9 +232,7 @@ color: #404BBF;
     width: calc((100% - 3 * 24px) / 4);
     }
 
-.features-item-icon {
-
-}
+.features-item-icon {}
 
  .features-subtitle {
     font-weight: 500px;
@@ -258,6 +249,7 @@ color: #404BBF;
     letter-spacing: 0.02em;
     color: #434455;
  }
+
  /** =================================== */
 
 
@@ -292,7 +284,7 @@ color: #404BBF;
     background: #fff;
     align-items: center;
     width: 100%;
-    height: 100%, ;
+    height: 100%;
  }
     
  
@@ -342,17 +334,16 @@ color: #404BBF;
     display: flex;
 }
 
-.icon {
-}
+.icon {}
 
 .team-contact-link {
     fill: #F4F4FD;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover,
 .team-link:focus {
-    background-color: #31d0aa;
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #31d0aa;  
 }
 
 /** =================================== */
@@ -391,11 +382,8 @@ color: #404BBF;
     width: calc((100% - 24px * 2) / 3);
     background: #fff;
     position: relative;
-
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-            0 1px 1px 0 rgba(46, 47, 66, 0.16),
-            0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .portfolio-item:hover .portfolio-cover-text,
@@ -409,7 +397,7 @@ color: #404BBF;
  .portfolio-cover-wrap {
     position: relative;
     overflow: hidden;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
  }
 
  .portfolio-data {
@@ -428,11 +416,6 @@ color: #404BBF;
     color: #2e2f42;
     margin-bottom: 8px;
 }
-
-
-
-
-
 
  .portfolio-item-text {
     font-size: 16px;
@@ -472,16 +455,13 @@ color: #404BBF;
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-data {
 margin-right: 120px;
 margin-left: 156px;
-align-items: baseline;
 }
-
-  
-  
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -508,10 +488,7 @@ align-items: baseline;
     max-width: 264px;  
 }
 
-.footer-media-icon {
-    align-items: baseline;
-    
-}
+.footer-media-icon {}
 
 
 .footer-text-media {
@@ -527,10 +504,6 @@ align-items: baseline;
 .footer-icon {
     display: flex;
     gap: 16px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
 }
 
 .icon-link {
@@ -542,16 +515,13 @@ align-items: baseline;
     justify-content: center;
     align-items: center;
     display: flex;
-    
-   
 }
 
 .footer-contact-link {
     fill: #F4F4FD;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover,
