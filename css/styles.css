@@ -158,13 +158,15 @@ color: #404BBF;
     padding: 188px 0;
     background: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    max-width: 1440px;
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    
  }
-
+ 
 
 .container {}
 
@@ -175,10 +177,12 @@ color: #404BBF;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    background-size: 100%;
     max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
 }
 
 .hero-buy-btn {
@@ -326,7 +330,6 @@ color: #404BBF;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -398,8 +401,11 @@ color: #404BBF;
     width: calc((100% - 24px * 2) / 3);
     background: #fff;
     position: relative;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
  }
 
  .portfolio-item:hover .portfolio-cover-text,
@@ -446,11 +452,9 @@ color: #404BBF;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    background-color: #4d5ae5;;
+    background-color: #4d5ae5;
     padding-left: 32px;
     padding-right: 32px;
-    display: flex;
-    align-items: center;
     transform: translateY(100%);
     padding: 40px 32px;
     height: 100%;
